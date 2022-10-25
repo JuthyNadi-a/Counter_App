@@ -12,6 +12,7 @@ main {
 }
 h1 {
     background-color: rgb(9, 84, 104);
+    color: aliceblue;
     height: 200px;
     width: 200px;
     border-radius: 51%;
@@ -29,18 +30,18 @@ button {
     border: none;
     border-radius: 3px;
     margin-right: 20px;
-    font-size: 1rem;
-    height: 1.8rem;
+    font-size: 1.4rem;
+    height: 2rem;
     width: 100px;
     font-family: inherit;
     font-weight: 800;
     box-shadow: 2px 2px gray;
 }
 button:hover {
-    background-color: rgb(63, 60, 60);
-    color: aliceblue;
+    color: rgb(239, 242, 243);
+    background-color: rgb(107, 109, 109);
     transform: scale(1.2deg);
     transition: .5s ease-out;
-    height: 2rem;
+    height: 2.3rem;
     box-shadow: 2px 2px rgb(115, 113, 113);
 }

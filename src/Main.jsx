@@ -5,8 +5,20 @@ class Main extends Component {
     state= {
         counter: 0,
     };
+    addFiveHandler = () => {
+        this.setState({counter: this.state.counter + 5})
+    };
     addOneHandler = () => {
         this.setState({counter: this.state.counter + 1})
+    };
+    resetHandler = () => {
+        this.setState({counter: 0})
+    };
+    resetOneHandler = () => {
+        this.setState({counter: this.state.counter - 1})
+    };
+    resetFiveHandler = () => {
+        this.setState({counter: this.state.counter - 5})
     };
     render() {
         return (
@@ -14,11 +26,11 @@ class Main extends Component {
                 <div>
                 <div className='header'><h1>{this.state.counter}</h1></div>
                     <div className='buttons'> 
-                    <button>Add five</button>
+                    <button onClick={this.addFiveHandler}>Add five</button>
                     <button onClick={this.addOneHandler}>Add one</button>
-                    <button>Reset</button>
-                    <button>Reset one</button>
-                    <button>Reset five</button>
+                    <button onClick={this.resetHandler}>Reset</button>
+                    <button onClick={this.resetOneHandler}>Reset one</button>
+                    <button onClick={this.resetFiveHandler}>Reset five</button>
                     </div>
                 </div>
             </main>
