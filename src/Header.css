@@ -1,0 +1,11 @@
+header {
+    background-color: rgb(3, 66, 83);
+    margin-top: 0;
+    height: 10vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: aliceblue;
+    font-weight: 800;
+}
