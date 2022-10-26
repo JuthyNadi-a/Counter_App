@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Features
 1. multiple different components
 2. header component, main component- buttons, circle/counter component, footer component
+3. Counter can't go below zero
 
 <!-- ## Available Scripts
 

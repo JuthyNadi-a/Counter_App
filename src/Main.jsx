@@ -14,11 +14,25 @@ class Main extends Component {
     resetHandler = () => {
         this.setState({counter: 0})
     };
-    resetOneHandler = () => {
-        this.setState({counter: this.state.counter - 1})
+    resetOneHandler = () => { 
+        if (this.state.counter <= 5) 
+            {
+                this.setState({counter: 0})
+            }
+        else if (this.state.counter > 0) 
+        {
+            this.setState({counter: this.state.counter - 1})
+        }
     };
     resetFiveHandler = () => {
-        this.setState({counter: this.state.counter - 5})
+        if (this.state.counter <= 5) 
+            {
+                this.setState({counter: 0})
+            }
+        else if (this.state.counter > 0)
+            {
+            this.setState({counter: this.state.counter - 5})
+            } 
     };
     render() {
         return (

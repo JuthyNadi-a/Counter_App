@@ -7,11 +7,11 @@ import Footer from './Footer';
 
 const App = () => {
   return (
-    <body>
-      <Header />
+    <div>
+      <Header name ='Nadia'/>
       <Main />
       <Footer />
-    </body>
+    </div>
   );
 }
 
